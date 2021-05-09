@@ -35,8 +35,7 @@ def find_center(token):
                     clean_center(center)
 
 
-token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJjMGU2ZTBkNS1kYTFjLTRhM2UtODJkZS0xMmFhMGFlYjU5ODciLCJ1c2VyX2lkIjoiYzBlNmUwZDUtZGExYy00YTNlLTgyZGUtMTJhYTBhZWI1OTg3IiwidXNlcl90eXBlIjoiQkVORUZJQ0lBUlkiLCJtb2JpbGVfbnVtYmVyIjo3OTc2MDQzNjA3LCJiZW5lZmljaWFyeV9yZWZlcmVuY2VfaWQiOjQwMTg5NzY0OTI1NTIwLCJzZWNyZXRfa2V5IjoiYjVjYWIxNjctNzk3Ny00ZGYxLTgwMjctYTYzYWExNDRmMDRlIiwidWEiOiJNb3ppbGxhLzUuMCAoWDExOyBMaW51eCB4ODZfNjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZS85MC4wLjQ0MzAuOTMgU2FmYXJpLzUzNy4zNiIsImRhdGVfbW9kaWZpZWQiOiIyMDIxLTA1LTA5VDExOjQyOjQ5LjA4MloiLCJpYXQiOjE2MjA1NjA1NjksImV4cCI6MTYyMDU2MTQ2OX0.XGmKWQxwDANp_R21w8aXbU-nup_NUQDEJtrebt2qVNI"
-
+token = ""
 # find_center(token)
 
 
@@ -46,7 +45,7 @@ def get_token():
         'Content-type': 'application/json'
     }
 
-    number = "8112274755"
+    number = ""
     body = {
         "mobile": (number)
     }
