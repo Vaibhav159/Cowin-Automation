@@ -1,5 +1,6 @@
 import requests
 import json
+from hashlib import sha256
 
 OTP_URL = 'https://cdn-api.co-vin.in/api/v2/auth/public/generateOTP'
 VALIDATE_OTP_URL = ""
@@ -39,7 +40,31 @@ token = ""
 # find_center(token)
 
 
+def get_otp():
+    headers = {
+        'accept': 'application/json',
+        'Content-type': 'application/json',
+    }
+
+    data = '{"mobile":"1234122411"}'
+
+    r = requests.post(OTP_URL, headers=headers, data=data)
+    print(r.status_code)
+    print(r.json())
+    return r.json()
+
+
+# get_otp()
+
 def get_token():
+
+    otp = str(123456)
+
+    hashed_otp = sha256(str.encode(otp)).hexdigest()
+
+    print(hashed_otp)
+
+    return
     headers = {
         'accept': 'application/json',
         'Content-type': 'application/json',
